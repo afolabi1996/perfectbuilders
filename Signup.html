@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/Signup.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/perfectbuilderslogo.png" alt="" />
+        </a>
+      </div>
+      <h1>Sign Up</h1>
+      <form id="signupForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <label for="password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          required
+        />
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div class="AlternativeSignUp">
+        Or Sign up with <a href="http://google.com">Google</a>?
+      </div>
+    </div>
+
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://perfectbuildersisl.com">perfectbuildersisl.com</a>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

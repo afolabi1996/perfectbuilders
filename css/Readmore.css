@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    overflow-x: scroll;
+  }
+
+  .civilworks_Image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 0px 50px 0px 50px ;
+  }
+
+.civilworkscard_firstsection{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-top:50px ;
+}
+
+.articlesection{
+    display: block;
+}
+
+.civilworkscard_secondSection{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-top:50px ;
+}
+
+.civilworkscard_Thirdsection{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-top:50px ;
+}
+
+.civilworkscard_FourthSection{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-top:50px ;
+}
+
+.civilworks_Image img{
+    max-width: 550px;
+    border: 2px solid grey;
+    border: none;
+    box-shadow: #0c0c0c 5px 5px 5px;
+    z-index: -1;
+}
+
+.photoSection{
+    display: grid;
+    grid-template-columns: repeat(2);
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 20px 30px ;
+    margin-top: 60px;
+    /* border: 0.5 solid grey;
+    box-shadow: #0c0c0c 5px 5px 5px; */
+}
+
+.photoSection img{
+    width: 500px;
+}
+
+.CivilPhotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 50px 0px 50px;
+    row-gap: 50px;
+    border: none;
+    /* box-shadow: #0c0c0c 0.5px 0.3px 0.3px 0.5px; */
+}
+
+
+.photoSection h2{
+    text-align: center;
+    margin-bottom:20px ;
+}
+
+
+@media only screen and (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .civilworks_Image {
+      padding: 30px;
+    }
+  
+    .civilworkscard_firstsection,
+    .civilworkscard_secondSection,
+    .civilworkscard_Thirdsection,
+    .civilworkscard_FourthSection {
+      flex-direction: column;
+    }
+  
+    .civilworks_Image img {
+      max-width: 100%;
+    }
+  
+    .photoSection {
+      grid-template-columns: 1fr;
+    }
+  
+    .CivilPhotos {
+      padding: 0;
+    }
+  
+    .CivilPhotos img {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .civilworks_Image {
+      padding: 50px;
+    }
+  
+    .photoSection {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .CivilPhotos img {
+      width: 450px;
+    }
+  }
